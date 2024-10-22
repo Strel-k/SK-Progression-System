@@ -1,0 +1,120 @@
+header{
+    background-color: white;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.5);
+    padding:5px;
+}
+header h2 {
+    color:blue;
+    font-weight:700;
+}
+.profileHeader{
+    display: flex;
+    align-items: center;
+    padding:15px;
+    margin-left:auto;
+    justify-content:end; 
+}
+.profileHeader h2 {
+    margin-right:auto;
+    
+}
+.profileHeader img {
+    width: 50px;
+    height: 40px;
+    border-radius: 50%; 
+    right:0;
+    padding:10px;
+}
+.profileHeader i {
+    margin-right: 0;
+    color: black; 
+    font-size: 20px;
+}
+
+body{
+    background-color: antiquewhite;
+    font-family: "Open Sans", sans-serif;
+
+}
+.sidebar-container{
+    margin-top:auto;
+    padding-top:25px;
+    background-color: rgb(53, 52, 52);
+    width:15%;
+    height:100%;
+    padding:10px;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.sidebar{
+    color:white;
+    font-weight:600;
+    justify-content: space-between;
+    display:flexbox;
+    align-items: center;
+}
+.sidebar u {
+    padding:5px;
+}
+.sidebar ul {
+    list-style-type: none;
+    padding: 10px;
+    color: white;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    border-radius: 5px; 
+    cursor: pointer; 
+    transition: background-color 0.3s ease; 
+}
+
+.sidebar ul:hover  {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+.sidebar ul i {
+    margin-right: 10px; 
+}
+.selected {
+    background-color: rgb(172, 165, 165);
+    border-radius: 5px;
+    align-items: center;         
+    padding: 8px;     
+}
+.selectedPage i{
+    background-color:orange;
+    border-radius: 5px;
+    font-size:15px;
+    padding:5px;
+    justify-content: center;
+    margin-right:auto;
+    left:0;
+    
+}
+.sidebar span {
+    padding:5px;
+}
+.logout{
+    color:white;
+    border-radius:5px;
+    font-weight:600;
+    align-items: center;
+    margin-top:auto;
+    cursor: pointer; 
+    transition: background-color 0.3s ease; 
+    margin-top: auto;
+}
+.logout ul:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+.logout ul i {
+    margin-right: 10px;
+}
+footer{
+    background-color: black;
+}
+footer p {
+    color:white;
+    text-align: center;
+}
