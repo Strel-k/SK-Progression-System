@@ -25,19 +25,38 @@
     
     <div class="sidebar-container">
         <div class="sidebar">
-            <ul><i class='bx bxs-home'></i><span>Dashboard</span></ul>
-            <ul><i class='bx bxs-spreadsheet'></i><span>Projects</span></ul>
-            <ul><i class='bx bxs-group'></i><span>Members</span></ul>
+            <ul data-section="dashboard"><i class='bx bxs-home'></i><span>Dashboard</span></ul>
+            <ul data-section="projects"><i class='bx bxs-spreadsheet'></i><span>Projects</span></ul>
+            <ul data-section="members"><i class='bx bxs-group'></i><span>Members</span></ul>
             <div class="logout">
-                <ul><i class='bx bx-exit'></i><span> Log out</span></ul>
+                <ul data-section="logout"><i class='bx bx-exit'></i><span>Log out</span></ul>
             </div>    
         </div>
-        <button id="darkModeToggle" class="toggle-btn dark-mode-toggle"><i class='bx bxs-moon'></i></button>
     </div>
 </div>
-  <div class="main-body">
-    
-  </div>
+<button id="darkModeToggle" class="toggle-btn dark-mode-toggle"><i class='bx bxs-moon'></i></button>
+
+<div class="main-body">
+    <div id="dashboard" class="content-section" style="display: none;">
+        <div class="dashboardTitle">
+            <h2>Dashboard</h2>
+
+        </div>
+        <p>Welcome to the Dashboard.</p>
+    </div>
+    <div id="projects" class="content-section" style="display: none;">
+        <h2>Projects</h2>
+        <p>Here are your projects.</p>
+    </div>
+    <div id="members" class="content-section" style="display: none;">
+        <h2>Members</h2>
+        <p>List of members.</p>
+    </div>
+    <div id="logout" class="content-section" style="display: none;">
+        <h2>No Logout yet haha.</h2>
+        <p>Wala Umalis Tulog</p>
+    </div>
+</div>
     
     <footer>
         <p>Powered by div.</p>
