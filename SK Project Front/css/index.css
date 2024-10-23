@@ -226,6 +226,9 @@ footer.dark-mode {
     height: 100vh;
     transition: margin-left 0.3s ease;
 }
+.main-body h2 {
+    text-transform: uppercase;
+}
 .main-body.collapsed {
     margin-left: 7%; /* Full width when sidebar is collapsed */
 }
@@ -233,9 +236,7 @@ footer.dark-mode {
     width: 80%;
     text-align: center; /* Center text within each section */
 }
-.dashboardTitle {
-    
-}
+
 @media (max-width: 1200px) {
     .sidebar-container {
         width: 25%; 

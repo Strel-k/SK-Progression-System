@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="css/font.css">
     <link rel="stylesheet" type="text/css" href="css/index.css">
+    <link rel="stylesheet" type="text/css" href="css/modal.css">
     <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -29,8 +30,9 @@
             <ul data-section="projects"><i class='bx bxs-spreadsheet'></i><span>Projects</span></ul>
             <ul data-section="members"><i class='bx bxs-group'></i><span>Members</span></ul>
             <div class="logout">
-                <ul data-section="logout"><i class='bx bx-exit'></i><span>Log out</span></ul>
-            </div>    
+                <ul id="logoutButton" data-section="logout"><i class='bx bx-exit'></i><span>Log out</span></ul>
+            </div>
+            
         </div>
     </div>
 </div>
@@ -52,12 +54,19 @@
         <h2>Members</h2>
         <p>List of members.</p>
     </div>
-    <div id="logout" class="content-section" style="display: none;">
-        <h2>No Logout yet haha.</h2>
-        <p>Wala Umalis Tulog</p>
+  
+</div>
+<div id="logoutModal" class="modal">
+    <div class="modal-content">
+        <div>
+            <span class="close">&times;</span>
+        </div>
+        <h2>Logout Confirmation</h2>
+        <p>Are you sure you want to log out?</p>
+        <button id="confirmLogout" class="modal-button">Confirm</button>
+        <button id="cancelLogout" class="modal-button">Cancel</button>
     </div>
 </div>
-    
     <footer>
         <p>Powered by div.</p>
     </footer>
