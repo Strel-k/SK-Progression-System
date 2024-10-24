@@ -9,6 +9,7 @@
     <link rel="stylesheet" type="text/css" href="css/notification.css">
     <link rel="stylesheet" type="text/css" href="css/modal.css">
     <link rel="stylesheet" type="text/css" href="css/projects.css">
+    <link rel="stylesheet" type="text/css" href="css/members.css">
 
     <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
@@ -95,15 +96,121 @@
         <div id="members" class="content-section" style="display: none;">
             <div class="memberTitle">
                 <h2>Members</h2>
+                <hr>
+            </div>
+            <div class="view-toggle">
+                <button id="gridViewBtn" class="view-button active"><i class='bx bxs-grid-alt'></i></button>
+                <button id="listViewBtn" class="view-button"><i class='bx bx-list-ul' style='color:#ffffff' ></i></button>
+                <button id="search" class="view-button"><i class='bx bx-search' style='color:#ffffff' ></i></button>
+
+                <button id="inviteMembers" class="view-button">Invite Members</button>
+
             </div>
             <div class="memberContent">
-                <h3>Welcome to the Dashboard!</h3>
-                <p>This is your personal dashboard, where you can manage your projects, view notifications, and access other functionalities.</p>
+                <div id="memberGrid" class="member-grid">
+                    <div class="member">
+                        <div class="memberImage">
+                            <img src="image/pfpskshit.jpg" alt="">
+                        </div>
+                        <div class="memberName">
+                            <h4>Mikoto Urabe</h4>
+                        </div>
+                        <div class="memberDescription">
+                            <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."</p>
+                        </div>
+                    </div>
+                    <div class="member">
+                        <div class="memberImage">
+                            <img src="image/Kawaii Nagato.jpg" alt="">
+                        </div>
+                        <div class="memberName">
+                            <h4>Yuki Nagato</h4>
+                        </div>
+                        <div class="memberDescription">
+                            <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."</p>
+                        </div>
+                    </div>
+                    <div class="member">
+                        <div class="memberImage">
+                            <img src="image/Badcat.jpg" alt="">
+                        </div>
+                        <div class="memberName">
+                            <h4>John Doe</h4>
+                        </div>
+                        <div class="memberDescription">
+                            <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."</p>
+                        </div>
+                    </div>
+                    <div class="member">
+                        <div class="memberImage">
+                            <img src="image/Badcat.jpg" alt="">
+                        </div>
+                        <div class="memberName">
+                            <h4>Jane Doe</h4>
+                        </div>
+                        <div class="memberDescription">
+                            <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."</p>
+                        </div>
+                    </div>
+                </div>
+                <div id="memberList" class="member-list" style="display: none;">
+                    <div class="member-item">
+                        <div class="memberImage">
+                            <img src="image/pfpskshit.jpg" alt="">
+                        </div>
+                        <div class="memberDetails">
+                            <div class="memberName">
+                                <h4>Mikoto Urabe</h4>
+                            </div>
+                            <div class="memberDescription">
+                                <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="member-item">
+                        <div class="memberImage">
+                            <img src="image/Kawaii Nagato.jpg" alt="">
+                        </div>
+                        <div class="memberDetails">
+                            <div class="memberName">
+                                <h4>Yuki Nagato</h4>
+                            </div>
+                            <div class="memberDescription">
+                                <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="member-item">
+                        <div class="memberImage">
+                            <img src="image/Badcat.jpg" alt="">
+                        </div>
+                        <div class="memberDetails">
+                            <div class="memberName">
+                                <h4>John Doe</h4>
+                            </div>
+                            <div class="memberDescription">
+                                <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="member-item">
+                        <div class="memberImage">
+                            <img src="image/Badcat.jpg" alt="">
+                        </div>
+                        <div class="memberDetails">
+                            <div class="memberName">
+                                <h4>Jane Doe</h4>
+                            </div>
+                            <div class="memberDescription">
+                                <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-           
         </div>
-    </div>
-
+        
+</div>
     <div id="logoutModal" class="modal">
         <div class="modal-content">
             <div>
@@ -126,6 +233,8 @@
     <script src="js/darkmode.js"></script>
     <script src="js/notification.js"></script>
     <script src="js/selector.js"></script>
+    <script src="js/memberView.js"></script>
+
 
 </body>
 </html>
