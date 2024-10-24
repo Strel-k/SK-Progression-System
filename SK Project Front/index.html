@@ -8,6 +8,8 @@
     <link rel="stylesheet" type="text/css" href="css/mainBody.css">
     <link rel="stylesheet" type="text/css" href="css/notification.css">
     <link rel="stylesheet" type="text/css" href="css/modal.css">
+    <link rel="stylesheet" type="text/css" href="css/projects.css">
+
     <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -36,9 +38,9 @@
     
     <div class="sidebar-container">
         <div class="sidebar">
-            <ul data-section="dashboard"><i class='bx bxs-home'></i><span>Dashboard</span></ul>
-            <ul data-section="projects"><i class='bx bxs-spreadsheet'></i><span>Projects</span></ul>
-            <ul data-section="members"><i class='bx bxs-group'></i><span>Members</span></ul>
+            <ul data-section="dashboard" class="menu-item"><i class='bx bxs-home'></i><span>Dashboard</span></ul>
+            <ul data-section="projects" class="menu-item"><i class='bx bxs-spreadsheet'></i><span>Projects</span></ul>
+            <ul data-section="members" class="menu-item"><i class='bx bxs-group'></i><span>Members</span></ul>
             <div class="logout">
                 <ul id="logoutButton" data-section="logout"><i class='bx bx-exit'></i><span>Log out</span></ul>
             </div>
@@ -84,7 +86,7 @@
            <div class="projectTitle">
             <h2>Projects</h2>
            </div>
-           <div class="projectContnet">
+           <div class="projectContent">
             <h3>Welcome to the Dashboard!</h3>
             <p>This is your personal dashboard, where you can manage your projects, view notifications, and access other functionalities.</p>
            </div>
@@ -123,5 +125,7 @@
     <script src="js/index.js"></script>
     <script src="js/darkmode.js"></script>
     <script src="js/notification.js"></script>
+    <script src="js/selector.js"></script>
+
 </body>
 </html>
