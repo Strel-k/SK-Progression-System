@@ -6,7 +6,7 @@ header {
 }
 .menu-item.active {
     color: rgb(45, 167, 208);
-    background-color: rgba(255, 255, 255, 0.1); /* Optional: Add a background highlight */
+    background-color: rgba(255, 255, 255, 0.1);
 }
 header h2 {
     color: rgb(45, 167, 208);
@@ -72,7 +72,7 @@ body {
 }
 body.collapsed {
     margin:0 !important;
-    margin-left:0 !important;
+    margin-right:0 !important;
 }
 .sidebar-container {
     padding-top: 30px;
@@ -135,8 +135,8 @@ body.collapsed {
 }
 
 .sidebar ul:hover {
-    background-color: rgba(255, 255, 255, 0.2);
-    width:90%;
+    background-color: rgba(255, 255, 255, 0.1);
+    width:100%;
 }
 
 .sidebar ul i {
@@ -155,7 +155,6 @@ body.collapsed {
 footer {
     background-color: black;
     justify-content: center;
-    width: 100%;
     bottom: 0;
     padding: 5px;
     text-transform: uppercase;
