@@ -29,8 +29,14 @@ header i {
 
 .profileHeader h2 {
     margin-right: auto;
-}
+    transition: color 0.3s ease, background-color 0.3s ease;
 
+}
+.profileHeader h2:hover {
+    color: rgb(45, 167, 208); /* Change to the desired color */
+
+
+}
 .profileHeader img {
     width: 55px;
     height: 50px;
@@ -50,7 +56,9 @@ header i {
 .profileHeader i:hover {
     background-color: rgba(103, 97, 97, 0.3); 
 }
-
+.profileHeader i.active {
+    color: rgb(45, 167, 208); /* Change to the desired color */
+}
 .profileHeader button {
     color: black;
     border: none;
@@ -215,16 +223,21 @@ footer.dark-mode {
     cursor: pointer; 
     transition: color 0.3s ease;
     z-index: 1000; 
-    border-radius: 25px;
-    padding: 10px;
+    border-radius: 45px;
+    padding: 12px;
 }
 
 .dark-mode-toggle:hover {
     color: #fff700; 
 }
 
-
-
+.dark-mode-toggle.light-bg {
+    background-color: white;
+    color: #e9e571; 
+}
+.dark-mode-toggle.light-bg:hover {
+    color: black; 
+}
 .content-section {
     width: 80%;
     text-align: center; /* Center text within each section */

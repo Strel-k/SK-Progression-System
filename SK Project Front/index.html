@@ -10,6 +10,7 @@
     <link rel="stylesheet" type="text/css" href="css/modal.css">
     <link rel="stylesheet" type="text/css" href="css/projects.css">
     <link rel="stylesheet" type="text/css" href="css/members.css">
+    <link rel="stylesheet" type="text/css" href="css/search.css">
 
     <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
@@ -23,13 +24,13 @@
         <div class="profileHeader">
             <button id="toggleSidebar" class="toggle-btn">☰</button> 
             <h2>Sangguniang Kabataan San Jose</h2>
-            <a href="" id="notificationBell"> <i class='bx bx-bell'></i></a>
+             <i class='bx bx-bell'id="notificationBell"></i>
             <div id="notificationBox" class="notification-box">
-                <h3>Notifications</h3>
+                <h3>Notifications</h3><hr>
                 <ul>
-                    <li>You have a new message!</li>
-                    <li>Your project has been updated.</li>
-                    <li>Meeting scheduled for tomorrow at 10 AM.</li>
+                    <li>You have a new message!</li><hr>
+                    <li>Your project has been updated.</li><hr>
+                    <li>Meeting scheduled for tomorrow at 10 AM.</li><hr>
                 </ul>
             </div>
             <img src="image/pfpskshit.jpg" alt="Profile">
@@ -53,7 +54,7 @@
     <div class="main-body">
         <div id="dashboard" class="content-section" style="display: none;">
             <div class="dashboardTitle">
-                <h2>Welcome, Pogi!</h2>
+                <h2>Welcome, div!</h2>
             </div>
             <div class="dashboardContent">
                 <p>manage your projects, monitor progress, submit reports and stay ahead!</p>
@@ -101,10 +102,11 @@
             <div class="view-toggle">
                 <button id="gridViewBtn" class="view-button active"><i class='bx bxs-grid-alt'></i></button>
                 <button id="listViewBtn" class="view-button"><i class='bx bx-list-ul' style='color:#ffffff' ></i></button>
+                <button id="inviteMembers" class="view-button"><i class='bx bx-message-square-add'></i></button>
                 <button id="search" class="view-button"><i class='bx bx-search' style='color:#ffffff' ></i></button>
+                <input type="text" id="searchBar" class="search-bar" placeholder="Search members...">
 
-                <button id="inviteMembers" class="view-button">Invite Members</button>
-
+                <hr>
             </div>
             <div class="memberContent">
                 <div id="memberGrid" class="member-grid">
@@ -234,6 +236,7 @@
     <script src="js/notification.js"></script>
     <script src="js/selector.js"></script>
     <script src="js/memberView.js"></script>
+    <script src="js/search.js"></script>
 
 
 </body>

@@ -20,3 +20,10 @@ window.addEventListener('click', (e) => {
         notificationBox.style.display = 'none'; // Hide if clicked outside
     }
 });
+const profileIcon = document.querySelector('.profileHeader i');
+
+// Add an event listener for a click event on the icon
+profileIcon.addEventListener('click', () => {
+    // Toggle the 'active' class on the <i> element when clicked
+    profileIcon.classList.toggle('active');
+});
