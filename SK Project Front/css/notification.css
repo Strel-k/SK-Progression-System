@@ -1,0 +1,43 @@
+.notification-box {
+    display: none; /* Start as hidden */
+    position: absolute;
+    top: 60px; /* Adjust based on your header height */
+    right: 20px; /* Adjust for positioning */
+    background: white;
+    border: 1px solid #ccc;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+    width: 200px; /* Set a fixed width */
+    padding: 10px;
+    border-radius: 5px;
+    z-index: 1000; /* Ensure it appears above other content */
+}
+
+/* Additional styles for better appearance */
+.notification-box h3 {
+    margin: 0;
+    font-size: 16px;
+}
+
+.notification-box ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.notification-box li {
+    padding: 5px 0;
+}
+
+/* Optional: Add a fade-in effect */
+.notification-box.fade-in {
+    animation: fadeIn 0.3s forwards; /* Apply fade-in animation */
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0; /* Start fully transparent */
+    }
+    to {
+        opacity: 1; /* End fully opaque */
+    }
+}
