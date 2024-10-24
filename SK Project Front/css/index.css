@@ -9,7 +9,7 @@ header h2 {
     color: rgb(45, 167, 208);
     font-weight: 700;
     text-transform: uppercase;
-    font-size: 2.5vw; /* Fluid font size */
+    font-size: 2.5vw; 
 }
 
 header i {
@@ -61,12 +61,16 @@ header i {
 }
 
 body {
-    background-color: antiquewhite;
+    background-color: rgb(183, 181, 178);
     font-family: "Open Sans", sans-serif;
-    margin:0;
+    margin:0 !important;
+    margin-left:0;
     height: 100vh;
 }
-
+body.collapsed {
+    margin:0 !important;
+    margin-left:0 !important;
+}
 .sidebar-container {
     padding-top: 30px;
     background-color: rgb(53, 52, 52);
@@ -217,21 +221,8 @@ footer.dark-mode {
     color: #fff700; 
 }
 
-.main-body {
-    margin-left: 15%; 
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 85%;
-    height: 100vh;
-    transition: margin-left 0.3s ease;
-}
-.main-body h2 {
-    text-transform: uppercase;
-}
-.main-body.collapsed {
-    margin-left: 7%; /* Full width when sidebar is collapsed */
-}
+
+
 .content-section {
     width: 80%;
     text-align: center; /* Center text within each section */
